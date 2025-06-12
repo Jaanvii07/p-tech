@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+.bg-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2D2D2D;
+  color: white;
+  font-family: 'Roboto';
+}
+.logo{
+    padding: 10px;
+}
+.menu {
+  display: flex;
+  gap: 20px; 
+}
+.menu a{
+    color: white;
+}
+.home-page-cards-container{
+    margin: 20px;
+}
+.home-page-card-img{
+    height: 60vh;
+    width: 40vw;
+}
