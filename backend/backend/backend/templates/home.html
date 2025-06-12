@@ -16,7 +16,91 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    margin: 0;
+}
+.bg-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2D2D2D;
+  color: white;
+  font-family: 'Roboto';
+}
+.logo{
+    padding: 10px;
+}
+.menu {
+  display: flex;
+  gap: 20px; 
+}
+.active-button{
+    background-color: #ffa9f9;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.home-page-cards-container{
+    margin: 50px;
+}
+.home-page-card-2{
+    margin: 20px;
+    color: white;
+    font-family: 'Roboto';
+    width: 50vw;
+}
+.home-page-card-img{
+    height: 600px;
+    width: 500px;
+}
+.home-page-card-heading{
+    font-family: 'Roboto';
+}
+.home-page-card-paragraph{
+    font-family: 'Roboto';
+    margin: 20px 0;
+}
+.gradient-button-1 {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  background: linear-gradient(to right, #fff7ad 0%, #ffa9f9 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.gradient-button-1:hover {
+  transform:scale(1.05);
+}
+.gradient-button-2{
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: black;
+  background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.gradient-button-2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+.home-page-button{
+    margin: 0 20px;
+}
+    </style>
 </head>
 
 <body>
@@ -25,22 +109,36 @@
             <nav class="navbar">
                 <div class="logo">Tech Helper</div>
                 <div class="menu">
-                    <a href="#">Home</a>
-                    <a href="#">Guides</a>
-                    <a href="#">Ask a Question</a>
-                    <a href="#">Become a Helper</a>
+                    <a class="menu-button active-button" href="#">Home</a>
+                    <a class="menu-button" href="#">Guides</a>
+                    <a class="menu-button" href="#">Ask a Question</a>
+                    <a class="menu-button" href="#">Become a Helper</a>
                 </div>
             </nav>
-            <div class="home-page-cards-container d-flex">
+            <div class="home-page-cards-container d-flex justify-content-between">
                 <div class="home-page-img-container">
-                    <img class="home-page-card-img" src="https://media.canva.com/v2/image-resize/format:PNG/height:160/quality:100/uri:ifs%3A%2F%2FM%2F883f814a-544b-439b-94e9-a7a06904c0b8/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAMzPLg481VgLrqnYnybHqNyXnQBegWIAlJAhgN5Lm7FB&exp=1749733567&osig=AAAAAAAAAAAAAAAAAAAAAHFmSq9NNUZAjnQoRJbuoVdeL3r4Yy5pIWYOxWtzlz99&signer=media-rpc&x-canva-quality=thumbnail"
+                    <img class="home-page-card-img"
+                        src="https://res.cloudinary.com/dvf1kfyya/image/upload/v1749717639/3673-Picsart-AiImageEnhancer_zttdhu.png"
                         alt="img">
                 </div>
-                <div class="home-page-card-content">
-                    <h1 class="home-page-card-heading">Helping Parents Use Technology with Confidence</h1>
-                    <p class="home-page-card-paragraph">Tech Helper  helps elders learn WhatsApp, UPI, and more — with step-by-step guides and real student help.</p>
-                    <button class="btn btn-primary">🔍 Browse Guides</button>
-                    <button class="btn btn-primary">📩 Ask a Question</button>
+                <div class="home-page-card-container d-flex flex-column justify-content-center">
+                    <div class="home-page-card-2">
+                        <h1 class="home-page-card-heading">Helping Parents Use Technology with Confidence</h1>
+                        <p class="home-page-card-paragraph">Tech Helper helps elders learn WhatsApp, UPI, and more —
+                            with step-by-step guides and real student help.</p>
+                        <linearGradient gradientUnits="userSpaceOnUse" id="_id24_id12" x1="0" y1="128" x2="735.689"
+                            y2="128">
+                            <stop stop-color="#fff7ad" stop-opacity="1" offset="0"></stop>
+                            <stop stop-color="#ffa9f9" stop-opacity="1" offset="1"></stop>
+                        </linearGradient>
+                        <linearGradient gradientUnits="userSpaceOnUse" id="id22_id9" x1="0" y1="128" x2="735.689"
+                            y2="128"> 
+                            <stop stop-color="#cdffd8" stop-opacity="1" offset="0"></stop>
+                            <stop stop-color="#94b9ff" stop-opacity="1" offset="1"></stop>
+                        </linearGradient>
+                        <button class="gradient-button-1 home-page-button">🔍 Browse Guides</button>
+                        <button class="gradient-button-2 home-page-button">📩 Ask a Question</button>
+                    </div>
                 </div>
             </div>
         </div>
