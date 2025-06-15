@@ -16,6 +16,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
  body{
     margin: 0;
@@ -23,7 +25,7 @@
 .bg-container , body{
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color:#1f2020;
 }
 .navbar {
   display: flex;
@@ -107,6 +109,54 @@
 .home-page-button{
     margin: 0 20px;
 }
+.guide{
+    margin-left: 50px;
+}
+.guide-h1{
+    color: white;
+    margin-left: 50px;
+     margin: 5px auto;
+     text-align: center;
+}
+.guide-p{
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: Roboto;
+     margin: 5px auto;
+     text-align: center;
+}
+.guide-container{
+    background-color: #383838;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px auto;
+    height: 100%; 
+}
+.guide-container:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    background-color:#2D2D2D;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.problem-h{
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    margin: 10px;
+}
+.problem-dis{
+    color: #d9d9d9;
+    font-size: 15px;
+    margin: 10px;
+}
     </style>
 </head>
 
@@ -117,7 +167,7 @@
                 <div class="logo">Tech Helper</div>
                 <div class="menu">
                     <a class="menu-button active-button" href="#">Home</a>
-                    <a class="menu-button" href="#">Guides</a>
+                    <a class="menu-button" href="#guides" >Guides</a>
                     <a class="menu-button" href="#">Ask a Question</a>
                     <a class="menu-button" href="#">Become a Helper</a>
                 </div>
@@ -149,6 +199,65 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="guides" class="guide">
+          <h1 class="guide-h1 ">Explore easy touch Guides</h1>
+          <p class="guide-p">Empowering parents to use digital tools, one step at a time.</p>
+          <div class="d-flex flex-row">
+                    <div class="container">
+                       <div class="row g-0">
+                 <div class="col-12 col-md-6 col-lg-3">
+               <div class="guide-container text-center">
+                   <i class="fa-brands fa-whatsapp icon"></i>
+                     <h3 class="problem-h">WhatsApp Basics</h3>
+                     <p class="problem-dis">Learn how to send messages, photos & voice notes</p>
+                     <button class="btn btn-secondary">View Guide</button>
+                </div>     
+               </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-2">
+               <div class="guide-container text-center">
+                   <i class="fa-brands fa-whatsapp icon"></i>
+                     <h3 class="problem-h">WhatsApp Basics</h3>
+                     <p class="problem-dis">Learn how to send messages, photos & voice notes</p>
+                     <button class="btn btn-secondary">View Guide</button>
+                </div>     
+               </div>
+               <div class="col-12 col-md-6 col-lg-3 mt-2">
+               <div class="guide-container text-center">
+                   <i class="fa-brands fa-whatsapp icon"></i>
+                     <h3 class="problem-h">WhatsApp Basics</h3>
+                     <p class="problem-dis">Learn how to send messages, photos & voice notes</p>
+                     <button class="btn btn-secondary">View Guide</button>
+                </div>     
+               </div>
+               <div class="col-12 col-md-6 col-lg-3 mt-2">
+               <div class="guide-container text-center">
+                   <i class="fa-brands fa-whatsapp icon"></i>
+                     <h3 class="problem-h">WhatsApp Basics</h3>
+                     <p class="problem-dis">Learn how to send messages, photos & voice notes</p>
+                     <button class="btn btn-secondary">View Guide</button>
+                </div>     
+               </div>
+               <div class="col-12 col-md-6 col-lg-3 mt-2">
+               <div class="guide-container text-center">
+                   <i class="fa-brands fa-whatsapp icon"></i>
+                     <h3 class="problem-h">WhatsApp Basics</h3>
+                     <p class="problem-dis">Learn how to send messages, photos & voice notes</p>
+                     <button class="btn btn-secondary">View Guide</button>
+                </div>     
+               </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-2">
+               <div class="guide-container text-center">
+                   <i class="fa-brands fa-whatsapp icon"></i>
+                     <h3 class="problem-h">WhatsApp Basics</h3>
+                     <p class="problem-dis">Learn how to send messages, photos & voice notes</p>
+                     <button class="btn btn-secondary">View Guide</button>
+                </div>     
+               </div>
+          </div>
+          </div>
+        </div>  
     </div>
 </body>
 
