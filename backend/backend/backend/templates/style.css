@@ -13,21 +13,25 @@ body{
   padding: 10px 20px;
   background-color: #2D2D2D;
   color: white;
-  font-family: 'Roboto';
+  font-family: 'sans serif';
 }
 .logo{
     padding: 10px;
 }
 .menu {
+  text-align: center;
   display: flex;
   gap: 20px; 
 }
-.active-button{
-    background-color: #ffa9f9;
-}
-.menu a{
+.menu-button{
     text-decoration: none;
     color: white;
+}
+.active-button{
+    background-color: rgb(224, 228, 179);
+    color: black;
+    border-radius: 10px;
+    padding: 0 8px;
 }
 .home-page-cards-container{
     margin: 50px;
