@@ -1,83 +1,185 @@
-body{
+body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2020;
+    color: white;
 }
-.bg-container{
+
+
+.bg-container {
     height: 100vh;
     width: 100vw;
-    background-color: black;
 }
+
+
 .navbar {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #2D2D2D;
-  color: white;
-  font-family: 'Roboto';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2D2D2D;
 }
-.logo{
+
+
+.logo {
     padding: 10px;
 }
+
+
 .menu {
-  display: flex;
-  gap: 20px; 
+    display: flex;
+    gap: 20px;
+    margin-right: 10px;
 }
-.active-button{
-    background-color: #ffa9f9;
-}
-.menu a{
+
+.menu-button {
     text-decoration: none;
     color: white;
+    transition: transform 0.3s;
 }
-.home-page-cards-container{
-    margin: 50px;
+
+.menu-button:hover, .active-button {
+    background-color: rgb(224, 228, 179);
+    color: black;
+    border-radius: 10px;
+    padding: 0 8px;
+    text-decoration: none;
+    transform: scale(1.05);
 }
-.home-page-card-2{
+
+
+.home-page-cards-container {
+    margin: 0px;
+}
+
+.home-page-card-2 {
     margin: 20px;
-    color: white;
-    font-family: 'Roboto';
-    width: 50vw;
+    width: 55vw;
 }
-.home-page-card-img{
-    height: 600px;
-    width: 500px;
+
+.home-page-card-img {
+    max-width: 80%;
+    height: auto;
+}
+
+.home-page-button {
+    margin: 0 20px;
 }
 .home-page-card-heading{
-    font-family: 'Roboto';
+    font-size: 2rem;
 }
-.home-page-card-paragraph{
-    font-family: 'Roboto';
-    margin: 20px 0;
-}
+
 .gradient-button-1 {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #000;
-  cursor: pointer;
-  background: linear-gradient(to right, #fff7ad 0%, #ffa9f9 100%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    background: linear-gradient(to right, #fff7ad 0%, #ffa9f9 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
+
 .gradient-button-1:hover {
-  transform:scale(1.05);
+    transform: scale(1.05);
 }
-.gradient-button-2{
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  color: black;
-  background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+
+.gradient-button-2 {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .gradient-button-2:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-.home-page-button{
-    margin: 0 20px;
+
+@media (max-width: 760px) {
+    .menu {
+        display:none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-page-cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-page-img-container{
+        display: flex;
+        justify-content: center;
+    }
+    .home-page-card-img {
+    min-width: 50%;
+    height: auto;
+}
+    .home-page-card-2 {
+        width: 90vw;
+    }
+
+    .gradient-button-1,
+    .gradient-button-2 {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.guide{
+    align-items: center;
+}
+.guide-h1{
+    color: white;
+    margin-left: 50px;
+     margin: 5px auto;
+     text-align: center;
+}
+.guide-p{
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: Roboto;
+     margin: 5px auto;
+     text-align: center;
+}
+.guide-container{
+    background-color: #383838;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px auto;
+    height: 100%; 
+}
+.guide-container:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    background-color:#2D2D2D;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.problem-h{
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    margin: 10px;
+}
+.problem-dis{
+    color: #d9d9d9;
+    font-size: 15px;
+    margin: 10px;
 }
