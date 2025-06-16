@@ -9,6 +9,7 @@ body {
 .bg-container {
     height: 100vh;
     width: 100vw;
+    
 }
 
 
@@ -148,7 +149,100 @@ body {
     font-size: 15px;
     margin: 10px;
 }
+.back-button{
+    margin-top: 20px;
+}
 
+        
+        .Ask-Question-container {
+            max-width: 600px;
+            height: 400px;
+            margin: auto;
+            background-color: #1e1d1d;
+            padding: 20px;
+            border-radius: 40px;
+            margin-top: 50px;
+            /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+        }
+        
+        .Ask-Question-container h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 2px;
+            font-family: fantasy;
+            color: #53cfbe;
+        }
+        
+        .Ask-Question-container-question {
+            margin-top: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        
+        form {
+            width: expensive;
+            padding: 0px;
+            margin-left: 50px;
+            border-radius: 5px;
+        }
+        
+         ::placeholder {
+            color: white;
+        }
+        
+        input[type="text"] {
+            width: 500px;
+            height: 190px;
+            border-radius: 20px;
+            border: 1px solid #454141;
+            background-color: rgb(112, 119, 105);
+            opacity: 0.9;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        .Ask-Question-container-button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #91c4c8;
+            color: white;
+            width: 510px;
+            height: 50px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        @media only screen and (max-width: 630px) {
+            .container {
+                width: auto;
+                height: auto;
+                padding: 20px;
+                margin-top: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            input[type="text"] {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+            }
+            button {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+            }
+            form {
+                flex-direction: column;
+                align-items: center;
+            }
+            body {
+                align-items: center;
+            }
+        }
 
 @media (max-width: 760px) {
     .menu {
