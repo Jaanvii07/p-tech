@@ -100,41 +100,6 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 760px) {
-    .menu {
-        display:none;
-        flex-direction: column;
-        align-items: center;
-    }
-    .home-page-cards-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .home-page-img-container{
-        display: flex;
-        justify-content: center;
-    }
-    .home-page-card-img {
-    min-width: 50%;
-    height: auto;
-}
-    .home-page-card-2 {
-        width: 90vw;
-    }
-
-    .gradient-button-1,
-    .gradient-button-2 {
-        font-size: 14px;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 500px) {
-    body {
-        font-size: 14px;
-    }
-}
-
 .guide{
     align-items: center;
 }
@@ -182,4 +147,40 @@ body {
     color: #d9d9d9;
     font-size: 15px;
     margin: 10px;
+}
+
+
+@media (max-width: 760px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-page-cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-page-img-container{
+        display: flex;
+        justify-content: center;
+    }
+    .home-page-card-img {
+    min-width: 50%;
+    height: auto;
+}
+    .home-page-card-2 {
+        width: 90vw;
+    }
+
+    .gradient-button-1,
+    .gradient-button-2 {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
 }
