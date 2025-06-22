@@ -25,7 +25,7 @@
     <div id="sectionHomepage">
         <div class="bg-container">
             <nav class="navbar">
-                <div class="logo">Tech Helper</div>
+                <div class="logo" onclick="display('sectionHomepage')">Tech Helper</div>
                 <div class="menu">
                     <a class="menu-button active-button" onclick="display('sectionHomepage')">Home</a>
                     <a class="menu-button" onclick="display('sectionGuidesPage')">Guides</a>
@@ -63,14 +63,14 @@
     </div>
     <div id="sectionGuidesPage">
         <nav class="navbar">
-                <div class="logo">Tech Helper</div>
-                <div class="menu">
-                    <a class="menu-button active-button" onclick="display('sectionHomepage')">Home</a>
-                    <a class="menu-button" onclick="display('sectionGuidesPage')">Guides</a>
-                    <a class="menu-button" onclick="display('sectionAskQuestion')">Ask a Question</a>
-                    <a class="menu-button" href="#">Become a Helper</a>
-                </div>
-            </nav>
+            <div class="logo" onclick="display('sectionHomepage')">Tech Helper</div>
+            <div class="menu">
+                <a class="menu-button active-button" onclick="display('sectionHomepage')">Home</a>
+                <a class="menu-button" onclick="display('sectionGuidesPage')">Guides</a>
+                <a class="menu-button" onclick="display('sectionAskQuestion')">Ask a Question</a>
+                <a class="menu-button" href="#">Become a Helper</a>
+            </div>
+        </nav>
         <div class="guide">
             <h1 class="guide-h1 ">Explore easy touch Guides</h1>
             <p class="guide-p">Empowering parents to use digital tools,
@@ -123,14 +123,12 @@
                     </div>
                 </div>
             </div>
-            <div class="back-button d-flex justify-content-center "><button class="btn btn-primary"
-                    onclick="display('sectionHomepage')">Back</button></div>
         </div>
     </div>
     <div id="sectionVolunteerDashboard">
         <div class="bg-container">
             <nav class="navbar">
-                <div class="logo">Tech Helper</div>
+                <div class="logo" onclick="display('sectionHomepage')">Tech Helper</div>
                 <div class="menu">
                     <a class="menu-button active-button" onclick="display('sectionHomepage')">Home</a>
                     <a class="menu-button" onclick="display('sectionGuidesPage')">Guides</a>
@@ -182,7 +180,7 @@
     </div>
     <div id="sectionAskQuestion">
         <nav class="navbar">
-                <div class="logo">Tech Helper</div>
+                <div class="logo" onclick="display('sectionHomepage')">Tech Helper</div>
                 <div class="menu">
                     <a class="menu-button active-button" onclick="display('sectionHomepage')">Home</a>
                     <a class="menu-button" onclick="display('sectionGuidesPage')">Guides</a>
@@ -190,23 +188,17 @@
                     <a class="menu-button" href="#">Become a Helper</a>
                 </div>
             </nav>
+            <div class="Ask-Question-container-bg">
         <div class="Ask-Question-container-bg-container">
-            <div class="Ask-Question-container">
-                <h1> 🙋Ask a Question</h1>
-                <div class="Ask-Question-container-question">
-                    <p>📝What do you need help with?</p>
-                </div>
-                <form>
-                    <input type="text" name="question" placeholder="  Type your question here...">
-
-                    <button class="Ask-Question-container-button" type="submit"><b>Submit</b></button>
-                    <div class="back-button d-flex justify-content-center "><button class="btn btn-primary"
-                            onclick="display('sectionHomepage')">Back</button></div>
-                </form>
-            </div>
+            <h1 class="Ask-Question-container-bg-container-heading">🙋Ask a Question</h1>
+            <p class="Ask-Question-container-bg-container-paragraph">📝What do you need help with?</p>
+            <input type="text" placeholder="Type your question here..." />
+            <button class="Ask-Question-container-bg-container-button">Submit Button</button>
         </div>
-        <script type="text/javascript"
-            src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+    </div>
+    </div>
+    <script type="text/javascript"
+        src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
 </body>
 
 </html>
