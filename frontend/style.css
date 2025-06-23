@@ -34,7 +34,7 @@ body {
     text-decoration: none;
     padding: 0.5rem 0.8rem;
     border-radius: 4px;
-    transition: background-color 0.2s;
+    transition: 0.2s;
 }
 
 .navbar .menu a:hover {
@@ -59,7 +59,6 @@ body {
     transition: 0.3s;
 }
 
-/* Close icon for side menu */
 .close-menu {
     display: none;
     position: absolute;
@@ -94,7 +93,6 @@ body {
     transform: rotate(-45deg);
 }
 
-/* Overlay for blur effect */
 .menu-overlay {
     display: none;
     position: fixed;
@@ -170,7 +168,6 @@ body {
     }
 }
 
-/* Add margin-top to menu items for spacing from top */
 @media (max-width: 600px) {
     .navbar .menu {
         padding-top: 56px;
