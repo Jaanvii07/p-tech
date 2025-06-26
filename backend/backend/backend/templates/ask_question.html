@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Helper</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+  .Ask-Question-container-bg {
+    font-family: sans-serif;
+    background-color: #1f2020;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+html,body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2020 ;
+    height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
+
+.Ask-Question-container-bg-container {
+    background-color: #1e1d1d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Ask-Question-container-bg-container-heading {
+    font-size: clamp(35px, 5vw, 40px);
+    margin: 0 0 15px 0;
+    text-align: center;
+    font-family: 'fantasy';
+    font-weight: 900;
+    color: #53cfbe;
+}
+
+.Ask-Question-container-bg-container-paragraph {
+    text-align: center;
+    color: #fff;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 10px 8rem 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #454141;
+    color: #fff;
+}
+
+::placeholder {
+    color: white;
+}
+
+.Ask-Question-container-bg-container-button {
+    width: 100%;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Ask-Question-container-bg-container-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+}
+</style>
+<body>
+      <div id="sectionAskQuestion">
+           {% include "navbar.html" %}
+        </div>
+        <div class="Ask-Question-container-bg">
+            <div class="Ask-Question-container-bg-container">
+                <h1 class="Ask-Question-container-bg-container-heading">🙋Ask a Question</h1>
+                <p class="Ask-Question-container-bg-container-paragraph">📝What do you need help with?</p>
+                <input type="text" placeholder="Type your question here..." />
+                <button class="Ask-Question-container-bg-container-button">Submit Button</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

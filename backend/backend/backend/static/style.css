@@ -1,0 +1,163 @@
+html,body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2020 ;
+    height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+.home-page-cards-container {
+    margin: 20px;
+}
+
+.home-page-card-2 {
+    /* margin: 20px; */
+    width: 55vw;
+}
+
+.home-page-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.home-page-card-img {
+    max-width: 80%;
+    /* height: auto; */
+    box-sizing: border-box;
+}
+
+.home-page-button {
+    margin: 0 20px;
+}
+
+.home-page-card-heading {
+    font-size: 2rem;
+}
+
+.gradient-button-1 {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    background: linear-gradient(to right, #fff7ad 0%, #ffa9f9 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.gradient-button-1:hover {
+    transform: scale(1.05);
+}
+
+.gradient-button-2 {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gradient-button-2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.guide {
+    align-items: center;
+}
+
+.guide-h1 {
+    color: white;
+    margin-left: 50px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.guide-p {
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: Roboto;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.guide-container {
+    background-color: #383838;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px auto;
+    height: 100%;
+}
+
+.guide-container:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.icon {
+    color: white;
+    font-size: 30px;
+    background-color: #2D2D2D;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.problem-h {
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.problem-dis {
+    color: #d9d9d9;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.back-button {
+    margin-top: 20px;
+}
+
+@media (max-width: 760px) {
+    .home-page-cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-page-img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-page-card-img {
+        min-width: 50%;
+        height: auto;
+    }
+
+    .home-page-card-2 {
+        width: 90vw;
+    }
+
+    .gradient-button-1,
+    .gradient-button-2 {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+}
